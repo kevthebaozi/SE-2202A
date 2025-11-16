@@ -7,7 +7,7 @@ function Assignment(title, dueDate){
     this.dueDate = dueDate;
 
     this.printAssignment = function () {
-        console.log(' Title: ' + this.title + ' | Due Date: ' + this.dueDate);
+        console.log('    Title: ' + this.title + ' | Due Date: ' + this.dueDate);
     };
 }
 
@@ -19,7 +19,7 @@ function Course(courseName, instructor, creditHours, assignments)
     this.assignments = assignments;
 
     this.courseInfo = function () {
-        console.log("Course: " + this.courseName + " | Instructor: " + this.instructor + " | Credit hours: " + this.creditHours);
+        console.log("Course: " + this.courseName + " | Instructor: " + this.instructor + " | Credit Hours: " + this.creditHours);
         console.log("Assignments >>>");
         
         for (let a of this.assignments) {
@@ -45,4 +45,5 @@ Course: Data Science | Instructor: Dr. Evil | Credit Hours: 6
 Assignments >>>
    Title: Final Report | Due Date: Mar 30
    Title: Presentation | Due Date: Apr 10
+
 */
