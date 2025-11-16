@@ -10,7 +10,7 @@ class Assignment {
     }
 
     printAssignment() {
-        console.log(' Title: ' + this.title + ' | Due Date: ' + this.dueDate);
+        console.log('    Title: ' + this.title + ' | Due Date: ' + this.dueDate);
     }
 }
 
@@ -23,7 +23,7 @@ class Course{
     }
 
     courseInfo(){
-        console.log("Course: " + this.courseName + " | Instructor: " + this.instructor + " | Credit hours: " + this.creditHours);
+        console.log("Course: " + this.courseName + " | Instructor: " + this.instructor + " | Credit Hours: " + this.creditHours);
         console.log("Assignments >>>");
         
         for (let a of this.assignments) {
@@ -39,3 +39,4 @@ let c2 = new Course('Data Science', 'Dr. Evil', 6, [new Assignment('Final Report
 
 c1.courseInfo();
 c2.courseInfo();
+
